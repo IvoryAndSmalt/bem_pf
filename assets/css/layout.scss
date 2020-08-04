@@ -1,0 +1,44 @@
+/*HEADER*/
+.header{
+  height: 100vh;
+  padding: $m1;
+  position: fixed;
+  width: $headerwidth;
+  &.header--darken{
+    background-color: darken($black, 10%);
+  }
+
+  .header__li{
+    margin: $m1 0 $m1 0;
+    text-align: center;
+    &.header__li--clickable{
+      cursor: pointer;
+    }
+
+    &.header__li--first{
+      margin: 0 0 $m4 0;
+      font-size: $s4;
+      span:last-child{
+        display: none;
+        font-size: $s0;
+      }
+      &:hover span:first-child{
+        display: none;
+      }
+      &:hover span:last-child{
+        display: block;
+      }
+    }
+  }
+}
+
+/*main*/
+.main{
+  background-color: $black;
+  margin-left: $headerwidth;
+  padding: $m4 $m1 $m1 $m3;
+
+  .main__section{
+    margin: $m4;
+  }
+}
