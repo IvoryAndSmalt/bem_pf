@@ -15,14 +15,23 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font: inherit;
+  font-family: 'Raleway', sans-serif;
   vertical-align: baseline;
   box-sizing: border-box;
   color: $white;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, a {
+footer, header, hgroup, menu, nav, section {
   display: block;
+}
+a{
+  display: block;
+  text-decoration: none;
+  &:hover, &:link, &:visited, &:focus{
+    text-decoration: none;
+    color: $white;
+  }
 }
 body {
   line-height: 1;
