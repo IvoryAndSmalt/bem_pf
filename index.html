@@ -14,7 +14,7 @@
 <header class="header header--darken">
     <ul class="header__ul">
         <li class="header__li header__li--clickable header__li--first"><a
-                href="index.html"><span>🏠</span><span>L.A.<br>VAN<br>DEN<br>BERG</span></a>
+                href="index.html"><span>L.A.<br>VAN<br>DEN<br>BERG</span></a>
         </li>
         <li class="header__li squared"><a href="#">ABOUT</a></li>
         <li class="header__li squared"><a href="#">CV</a></li>
@@ -23,25 +23,33 @@
     </ul>
     <ul class="header__ul">
         <li class="header__li">
-            <a target="_blank" href="https://www.github.com/IvoryAndSmalt">
-                <img class="header__img" src="./assets/images/GitHub_Logo_White.png"
-                     alt="GitHub Logo White"/>
-            </a>
+            <a class="header__li--last" target="_blank"
+               href="https://www.github.com/IvoryAndSmalt">
+                GitHub</a>
         </li>
     </ul>
 </header>
 
 <main class="main">
-    <section class="main__section"><h2 class="squared">Saloute :)</h2></section>
+    <section class="main__section"><h2>À venir...</h2></section>
     <section class="main__section">salut</section>
     <section class="main__section">salut</section>
     <section class="main__section">salut</section>
     <section class="main__section">salut</section>
-    <section class="main__section">salut</section>
+    <section class="main__section">
+        <form id="form">
+            <input class="form__element form__element--clickable" type="text" name="subject" id="subject"
+                   placeholder="subject">
+            <input class="form__element form__element--clickable" type="text" name="email" id="email" placeholder="email">
+            <textarea class="form__element form__element--clickable" name="message" id="message"
+                      placeholder="message"></textarea>
+            <input class="form__element" type="submit" value="Envoyer">
+            <p id="info">...</p>
+        </form>
+    </section>
     <section class="main__section">salut</section>
 </main>
 
-
-<script src="./assets/js/main.js"></script>
+<script defer src="./assets/js/main.js"></script>
 </body>
 </html>

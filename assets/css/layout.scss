@@ -26,21 +26,14 @@
       margin: 0 0 $m4 0;
 
       span:last-child {
-        display: none;
-        font-size: $s0;
-      }
-
-      &:hover span:first-child {
-        display: none;
-      }
-
-      &:hover span:last-child {
         display: block;
+        font-size: $s0;
       }
     }
 
-    .header__img{
-      width: 100%;
+    .header__li--last {
+      font-weight: bolder;
+      font-size: $s1;
     }
   }
 }
@@ -86,7 +79,7 @@
     right: 0;
   }
 
-  &:hover, &:hover>* {
+  &:hover, &:hover > * {
     color: $yellow;
     cursor: pointer;
   }
@@ -96,4 +89,37 @@
     height: 100%;
     width: 100%;
   }
+
+
 }
+
+.form__element--clickable, textarea.form__element--clickable {
+  background: none;
+  border: none;
+  border-bottom: 2px solid white;
+  color: $white;
+  padding: $m1 $m0;
+  transition: all 0.25s ease-in-out;
+  font-size: $s1;
+  resize: none;
+  font-family: "Raleway", sans-serif;
+  background: lighten($black, 5%);
+
+  &:focus {
+    outline: none;
+    border-color: $yellow;
+    color: $yellow;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  li.header__li a {
+    color: green !important;
+  }
+  @media screen and (orientation: landscape) {
+    li.header__li a {
+      color: red !important;
+    }
+  }
+}
+

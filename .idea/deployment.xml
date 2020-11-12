@@ -1,15 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="lucasvandenberg">
+  <component name="PublishConfigData" serverName="mut lucasvandenberg">
     <serverData>
-      <paths name="lucasvandenberg">
+      <paths name="mut lucasvandenberg">
         <serverdata>
           <mappings>
             <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
           </mappings>
           <excludedPaths>
-            <excludedPath local="true" path="$PROJECT_DIR$/.idea" />
+            <excludedPath path="/m4wtest" />
           </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="prato host">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="vps theanswers">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
         </serverdata>
       </paths>
     </serverData>
