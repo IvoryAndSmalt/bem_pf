@@ -42,7 +42,7 @@
 .main {
   background-color: $black;
   margin-left: $headerwidth;
-  padding: $m4 $m1 $m1 $m3;
+  padding: $m4 $m4 $m1 $m1;
 
   .main__section {
     margin: $m4;
@@ -89,26 +89,91 @@
     height: 100%;
     width: 100%;
   }
-
-
 }
 
-.form__element--clickable, textarea.form__element--clickable {
-  background: none;
-  border: none;
-  border-bottom: 2px solid white;
-  color: $white;
-  padding: $m1 $m0;
-  transition: all 0.25s ease-in-out;
-  font-size: $s1;
-  resize: none;
-  font-family: "Raleway", sans-serif;
-  background: lighten($black, 5%);
+/* FORM */
+#form {
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(50px, 1fr));
+  grid-gap: $m1;
 
-  &:focus {
-    outline: none;
-    border-color: $yellow;
-    color: $yellow;
+  input[type="text"] {
+    grid-column: auto / span 2;
+  }
+
+  textarea {
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 2;
+  }
+
+  p {
+    grid-column: 1 / span 4;
+    grid-row: auto / span 1;
+  }
+
+  .form__element--clickable, textarea.form__element--clickable {
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    color: $white;
+    padding: $m1 $m05;
+    transition: all 0.25s ease-in-out;
+    font-size: $s1;
+    resize: none;
+    font-family: "Raleway", sans-serif;
+    background: lighten($black, 5%);
+
+    &:focus {
+      outline: none;
+      border-color: $yellow;
+      color: $yellow;
+    }
+  }
+
+  .send {
+    grid-column: 4 / span 1;
+    grid-row: 2 / span 2;
+    position: relative;
+
+    #form_loading, #form_success {
+      position: absolute;
+      height: 70%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      opacity: 0;
+      transition: all 0.25s ease-in-out;
+
+      svg{
+        height: 100%;
+      }
+    }
+
+    input[type="submit"] {
+      font-family: "Raleway", sans-serif;
+      height: 100%;
+      width: 100%;
+      background: none;
+      font-size: $s1;
+      border: solid 2px $white;
+      outline: none;
+      color: $white;
+      cursor: pointer;
+      transition: all 0.25s ease-in-out;
+
+      &:hover {
+        color: $yellow;
+        border-color: $yellow;
+      }
+
+      &:disabled {
+        color: $black;
+        border-color: white;
+        cursor: not-allowed;
+      }
+    }
   }
 }
 
@@ -122,4 +187,3 @@
     }
   }
 }
-

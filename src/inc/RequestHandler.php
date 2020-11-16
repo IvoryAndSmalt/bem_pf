@@ -14,6 +14,7 @@ class RequestHandler
         http_response_code($code);
 
         echo json_encode([
+            "code" => $code,
             "status_message" => $status_message,
             "feedback_message" => $feedback
         ]);
