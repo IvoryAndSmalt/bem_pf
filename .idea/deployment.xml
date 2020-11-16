@@ -9,6 +9,7 @@
           </mappings>
           <excludedPaths>
             <excludedPath path="/m4wtest" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.htaccess" />
           </excludedPaths>
         </serverdata>
       </paths>

@@ -25,15 +25,18 @@
       justify-content: center;
       margin: 0 0 $m4 0;
 
-      span:last-child {
-        display: block;
-        font-size: $s0;
+      .header__img{
+        height: 32px;
       }
     }
 
     .header__li--last {
       font-weight: bolder;
       font-size: $s1;
+    }
+
+    .header__a {
+
     }
   }
 }
@@ -43,10 +46,27 @@
   background-color: $black;
   margin-left: $headerwidth;
   padding: $m4 $m4 $m1 $m1;
+  position: relative;
 
   .main__section {
     margin: $m4;
+
+    &.main__section--last {
+      font-size: $s0;
+      position: absolute;
+      margin-bottom: 0;
+      bottom: 20px;
+
+      a {
+        display: inline;
+      }
+
+      .yellow{
+        color: $yellow;
+      }
+    }
   }
+
 }
 
 /*individual elements*/
@@ -63,6 +83,7 @@
     width: 10px;
     border: solid 1px $white;
     transition: all .25s ease-in-out;
+    pointer-events: none;
   }
 
   &::before {
@@ -146,7 +167,7 @@
       opacity: 0;
       transition: all 0.25s ease-in-out;
 
-      svg{
+      svg {
         height: 100%;
       }
     }

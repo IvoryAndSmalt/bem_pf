@@ -41,6 +41,7 @@ window.addEventListener("load", function () {
                         submit.style.fontSize = "2rem";
                         submit.value = "✔️";
                         loading.style.opacity = "0";
+                        feedback.style.color = "#00aa00";
                     }
                     else{
                         feedback.style.color = "red";
@@ -48,8 +49,6 @@ window.addEventListener("load", function () {
                     }
                 });
         }, 500);
-
     //#00aa00
     })
-
 })
