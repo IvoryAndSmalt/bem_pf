@@ -21,7 +21,7 @@
         <li class="header__li squared"><a href="#">ABOUT</a></li>
         <li class="header__li squared"><a href="curriculumvitae.php">CV</a></li>
         <li class="header__li squared"><a href="#">WORKS</a></li>
-        <li class="header__li squared"><a href="#">CONTACT</a></li>
+        <li class="header__li squared"><a href="contact.php">CONTACT</a></li>
     </ul>
     <ul class="header__ul">
         <li class="header__li">
