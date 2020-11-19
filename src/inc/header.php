@@ -28,7 +28,7 @@
             <a title="portfolio Lucas van den Berg CV" href="curriculumvitae.php">CV</a>
         </li>
         <li class="header__li squared">
-            <a title="portfolio Lucas van den Berg projets" href="#">WORKS</a>
+            <a title="portfolio Lucas van den Berg projets" href="works.php">WORKS</a>
         </li>
         <li class="header__li squared">
             <a title="portfolio Lucas van den Berg contact" href="contact.php">CONTACT</a>
