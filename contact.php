@@ -1,7 +1,19 @@
-<?php $page_title = " - Accueil"; ?>
+<?php $page_title = " - Contact"; ?>
 <?php require_once "./src/inc/header.php"; ?>
 
     <div class="main__content">
+        <section class="main__section">
+            <h2 class="yellow">Me contacter</h2>
+            <div class="link">
+                <h3><a title="Envoyer un mail à lucas180395@gmail.com"
+                       href="mailto:lucas180395@gmail.com">
+                        lucas180395@gmail.com
+                    </a>
+                </h3>
+            </div>
+            <p>Un projet, une offre d'emploi ? Quelqu'un qui veut prendre de mes nouvelles ?<br>Utilisez le formulaire
+                de contact ci-dessous ou mon adresse e-mail. Je vous réponds dans les plus brefs délais.</p>
+        </section>
         <section class="main__section">
             <form id="form">
                 <input class="form__element form__element--clickable" type="text" name="subject" id="subject"

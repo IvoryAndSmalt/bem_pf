@@ -15,17 +15,30 @@
 <header class="header header--darken">
     <ul class="header__ul">
         <li class="header__li header__li--clickable header__li--first">
-            <a href="index.php"><img class="header__img" src="./assets/images/logo_web.svg"
-                                     alt="logo Lucas van den Berg"></a>
+            <a title="portfolio Lucas van den Berg accueil" href="index.php">
+                <img class="header__img"
+                     src="./assets/images/logo_web.svg"
+                     alt="logo Lucas van den Berg">
+            </a>
         </li>
-        <li class="header__li squared"><a href="#">ABOUT</a></li>
-        <li class="header__li squared"><a href="curriculumvitae.php">CV</a></li>
-        <li class="header__li squared"><a href="#">WORKS</a></li>
-        <li class="header__li squared"><a href="contact.php">CONTACT</a></li>
+        <li class="header__li squared">
+            <a title="portfolio Lucas van den Berg Accueil" href="index.php">ABOUT</a>
+        </li>
+        <li class="header__li squared">
+            <a title="portfolio Lucas van den Berg CV" href="curriculumvitae.php">CV</a>
+        </li>
+        <li class="header__li squared">
+            <a title="portfolio Lucas van den Berg projets" href="#">WORKS</a>
+        </li>
+        <li class="header__li squared">
+            <a title="portfolio Lucas van den Berg contact" href="contact.php">CONTACT</a>
+        </li>
     </ul>
     <ul class="header__ul">
         <li class="header__li">
-            <a class="header__li--last" target="_blank"
+            <a class="header__li--last"
+               title="github.com"
+               target="_blank"
                href="https://www.github.com/IvoryAndSmalt">
                 GitHub</a>
         </li>

@@ -81,4 +81,10 @@
         </section>
     </div>
 
+    <section class="main__section main__section--cv main__section--download">
+        <a target="_blank"
+           title="cv Lucas van den Berg télécharger"
+           href="./assets/documents/cv_lucasvandenberg_printemps_2020.pdf">Télécharger</a>
+    </section>
+
 <?php require_once "./src/inc/footer.php"; ?>

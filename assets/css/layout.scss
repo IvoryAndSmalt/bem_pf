@@ -51,6 +51,7 @@
   margin-left: $headerwidth;
   padding: $m4 $m4 $m1 $m1;
   position: relative;
+  min-height: 90vh;
 
   .main__section {
     margin: $m4;
@@ -63,6 +64,19 @@
 
       a {
         display: inline;
+      }
+    }
+
+    &.main__section--download{
+      a{
+        display: inline;
+        border: solid 2px $white;
+        padding: $m2 $m3;
+        transition: all 0.25s ease-in-out;
+        &:hover{
+          border-color: $yellow;
+          color: $yellow;
+        }
       }
     }
   }
@@ -81,18 +95,40 @@
     }
 
     .main__section {
-      margin: $m4;
+      margin: 0 $m4 $m4 $m4;
+
+      & > * {
+        margin: $m1 0 0 0;
+      }
+
+      h2 {
+        font-size: $s3;
+        margin-top: calc(#{$m1} - 5px);
+      }
+
+      h3 {
+        font-size: $s0;
+      }
+
+      p {
+        line-height: 1.4rem;
+      }
+
+      a{
+        display: inline;
+        &>h3{
+          display: inline;
+        }
+      }
 
 
       &.main__section--cv {
         margin-top: $m2;
         margin-bottom: $m2;
 
-
         & > * {
           margin: $m1 0 0 $m1;
         }
-
         .time {
           color: lighten($black, 30%);
           position: relative;
@@ -105,24 +141,9 @@
             color: lighten($black, 30%);
           }
         }
-
-        h2 {
-          font-size: $s3;
-          margin-top: calc(#{$m1} - 5px);
-        }
-
-        h3 {
-          font-size: $s0;
-        }
-
-        p {
-          line-height: 1.3rem;
-        }
       }
     }
   }
-
-
 }
 
 /*individual elements*/
@@ -179,12 +200,17 @@
   grid-gap: $m1;
 
   input[type="text"] {
+    grid-column: auto / span 1;
+  }
+
+  input[name="email"]{
     grid-column: auto / span 2;
   }
 
   textarea {
     grid-column: 1 / span 3;
     grid-row: 2 / span 2;
+    min-height: 150px;
   }
 
   p {
@@ -213,7 +239,7 @@
 
   .send {
     grid-column: 4 / span 1;
-    grid-row: 2 / span 2;
+    grid-row: 3 / span 1;
     position: relative;
 
     #form_loading, #form_success {
@@ -235,6 +261,7 @@
       font-family: "Raleway", sans-serif;
       height: 100%;
       width: 100%;
+      padding: $m2 $m3;
       background: none;
       font-size: $s1;
       border: solid 2px $white;
