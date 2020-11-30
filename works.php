@@ -48,7 +48,7 @@
             <p class="works">Intégration à partir d'une maquette du site de l'Association Belfortaine de Protection de
                 la
                 Nature
-                . Intégration WordPress, ACF, responsive design.</p>should deploy after merge
+                . Intégration WordPress, ACF, responsive design.</p>testing PR
         </section>
     </div>
 
