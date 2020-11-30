@@ -3,13 +3,13 @@
 
     <div class="main__content">
         <section class="main__section">
-            <h2 class="yellow">À propos de moi</h2>
+            <h2 class="yellow max_title">C'est moi,<br>Lucas.<span>C'est moi,<br>Lucas.</span></h2>
             <div class="image">
                 <img src="./assets/images/lucasvandenberg.jpg" alt="photo Lucas van den Berg">
             </div>
             <p>
                 Je suis Lucas van den Berg, un développeur PHP fullstack qui travaille principalement avec WordPress et
-                Symfony.<br>J'ai également des notions en Vue.js, Déploiement continu, Docker, Mysql. J'utilise souvent
+                Symfony.<br>J'ai également des notions en Vue.js, déploiement continu, Docker, Mysql. J'utilise souvent
                 Bootstrap dans mes projets,<br>mais je fais aussi de l'intégration sans framework. Vous pourrez trouver
                 des exemples de <a
                         class="yellow"

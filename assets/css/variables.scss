@@ -17,4 +17,4 @@ $s3: 1.4rem;
 $s4: 2rem;
 $s5: 3rem;
 
-$headerwidth: 7vw;
+$headerwidth: clamp(120px, 7vw, 180px);

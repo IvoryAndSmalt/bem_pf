@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 1;
 
   &.header--darken {
     background-color: darken($black, 10%);
@@ -67,13 +68,14 @@
       }
     }
 
-    &.main__section--download{
-      a{
+    &.main__section--download {
+      a {
         display: inline;
         border: solid 2px $white;
         padding: $m2 $m3;
         transition: all 0.25s ease-in-out;
-        &:hover{
+
+        &:hover {
           border-color: $yellow;
           color: $yellow;
         }
@@ -104,6 +106,23 @@
       h2 {
         font-size: $s3;
         margin-top: calc(#{$m1} - 5px);
+
+        &.max_title {
+          font-size: clamp(#{$s3}, 6vw, 5rem);
+          font-weight: 900;
+          position: relative;
+          z-index: 1;
+
+          span {
+            position: absolute;
+            z-index: -1;
+            color: white;
+            font-size: clamp(#{$s3}, 6vw, 5rem);
+            left: 3px;
+            top: 0;
+            animation: max_top 1.3s infinite linear alternate;
+          }
+        }
       }
 
       h3 {
@@ -114,9 +133,10 @@
         line-height: 1.4rem;
       }
 
-      a{
+      a {
         display: inline;
-        &>h3{
+
+        & > h3 {
           display: inline;
         }
       }
@@ -129,6 +149,7 @@
         & > * {
           margin: $m1 0 0 $m1;
         }
+
         .time {
           color: lighten($black, 30%);
           position: relative;
@@ -140,6 +161,16 @@
           & > * {
             color: lighten($black, 30%);
           }
+        }
+
+        .image {
+          img {
+            width: clamp(30px, 90vw, 600px);
+          }
+        }
+
+        .works {
+          width: clamp(30px, 90vw, 600px);
         }
       }
     }
@@ -203,7 +234,7 @@
     grid-column: auto / span 1;
   }
 
-  input[name="email"]{
+  input[name="email"] {
     grid-column: auto / span 2;
   }
 
@@ -292,5 +323,14 @@
     li.header__li a {
       color: red !important;
     }
+  }
+}
+
+@keyframes max_top {
+  from {
+    transform: translateY(2px);
+  }
+  to {
+    transform: translateY(-2px);
   }
 }
