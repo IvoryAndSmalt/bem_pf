@@ -20,7 +20,7 @@
         <section class="main__section main__section--cv">
             <span class="time"><time>2019</time> - <time>2020</time></span>
             <h2 class="yellow">Le Bon Combat - Support Technique</h2>
-            <h3><a rel="noreferrer" target="_blank" href="https://www.leboncombat.fr">leboncombat.fr</a></h3>
+            <h3><a rel="noreferrer" target="_blank" href="https://www.leboncombat.fr">leboncombat.fr</a></h3>h
             <div class="image">
                 <img src="./assets/images/leboncombat.png" alt="Le Bon Combat Accueil">
             </div>
